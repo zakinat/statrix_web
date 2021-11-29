@@ -1,7 +1,6 @@
 .navbar{
-    height: 101px;
+    
     @include flex-jst_dC-al_dC($jst:space-between);
-    padding: 2rem 6rem;
         &__links{
             flex: 1;
             @include flex-jst_dC-al_dC($jst:flex-start);
@@ -62,7 +61,6 @@
                         &-links{
                             p{
                                 @extend .navbar__links-p;
-                                color: RED ;
                                 margin:1rem 0 !important;
                             }
             
@@ -118,7 +116,7 @@
 }
 
 .navbar__sign-button{
-    background: linear-gradient(88.48deg, #FF754A 0.79%, #FFB421 100%);
+    background: $gradient-btn;
     border-radius: 4px;
     padding: 0.5rem 1rem;
     color:#fff;

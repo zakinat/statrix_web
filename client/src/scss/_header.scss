@@ -1,98 +1,91 @@
 .header {
     display: flex;
     flex-direction: row;
-
+    
         &__content{
             flex: 1;
+            padding-top:3rem;
             @include flex-jst_dC-al_dC($al:flex-start);
             flex-direction: column;
-            margin-right: 5rem;
 
                 h1{
                     font-family: $font_family;
-                    font-weight: 800;
-                    font-size: 62px;
-                    line-height: 75px;
-                    letter-spacing: -0.04em;
+                    font-weight: 700;
+                    font-size: 38px;
+                    line-height: 120%;
+                    
+                    color: #fff;
                 }
 
                 p{
                     font-family: $font_family;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 28px;
-                    color: $color-text;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 130%;
+                    color: #fff;
                     margin-top: 1.5rem;
                 }
 
-                &-input{
-                    width: 100%;
-                    margin: 2rem 0 1rem;
-                    display: flex;
-                    flex-direction: row;
-
-                        input{
-                            flex: 2;
-                            width: 100%;
-                            min-height: 50px;
-                            font-family: $font_family;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 28px;
-                            background: $color-footer;
-                            border: 2px solid $color-footer;
-                            padding: 0 1rem;
-                            outline: none;
-                            color: #fff;
+                &-knowMore{
+                    margin: 1.5rem 0 ;
+                    @include flex-jst_dC-al_dC();
+                    color: #fff;
+                    img{
+                        width: 33.33px;
+                        height: 33.33px;
+                        margin-right: 1rem ;
                         
-                            border-top-left-radius: 5px;
-                            border-bottom-left-radius: 5px;
-                        }
+                    }
+                }
 
-                        button{
-                            flex: 0.6;
+                &-demoAsk{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+
+                        button:first-child{
                             width: 100%;
                             min-height: 50px;
                             font-family: $font_family;
-                            font-weight: 400;
-                            font-size: 20px;
-                            line-height: 28px;
-                            background: #FF4820;
-                            border: 2px solid #FF4820;
+                            font-weight: 500;
+                            font-size: 17px;
+                            line-height: 22.1px;
+                            background: $gradient-btn;
                             padding: 0 1rem;
                             color: #fff;
                             cursor: pointer;
                             outline: none;
-                        
-                            border-top-right-radius: 5px;
-                            border-bottom-right-radius: 5px;
+                            margin-bottom: 1rem;
+                            border-radius: 4px;
+                            outline: none;
+                            border: none;
+                            text-align: center;
+                        }
+                        button:last-child{
+                            width: 100%;
+                            min-height: 50px;
+                            font-family: $font_family;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 23.4px;
+                            background: none;
+                            padding: 0 1rem;
+                            color: #fff;
+                            cursor: pointer;
+                            outline: none;
+                            border: 0.7px solid #FFFFFF;
+                            box-sizing: border-box;
+                            margin-bottom: 1rem;
+                            border-radius: 4px;
+                            text-align: center;
                         }
                 }
 
-                &-people{
-                    width: 100%;
-                    @include flex-jst_dC-al_dC($jst:flex-start);
-                    flex-direction: row;
-                    margin-top: 2rem;
-
-                        img{
-                            width: 181.79px;
-                            height: 38px;
-                        }
-                        p{
-                            margin: 0 0 0 1rem;
-                            font-family: $font_family;
-                            font-weight: 500;
-                            font-size: 12px;
-                            line-height: 38px;
-                            color: #fff;
-                            text-align: center;
-                        }
-                        }
                 }
 
         &__image{
             flex: 1;
+            padding-top:3rem; 
             @include flex-jst_dC-al_dC();
 
                 img{
@@ -103,7 +96,10 @@
 }
 
     
+.header__bg{
+    background: linear-gradient(180deg, #4C1AC4 0%, #38AAE4 76.02%);
 
+}
 
 @media screen and (max-width: 1050px) {
     .header {

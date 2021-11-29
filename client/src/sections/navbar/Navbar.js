@@ -8,7 +8,7 @@ import {Menu} from './MenuLinks'
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
     return (
-        <div className='navbar'>
+        <div className='navbar section__padding'>
             <div className='navbar__links'>
                 <div className='navbar__links-logo'>
                     <a href='#home'><img src={logo}  alt='logo'/></a>

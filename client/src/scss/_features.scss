@@ -1,0 +1,9 @@
+.features{
+    @include flex-jst_dC-al_dC($jst:space-between);
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 15rem;
+    padding:1rem 2rem ;
+    
+    width: 100%;
+}

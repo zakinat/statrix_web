@@ -1,103 +1,123 @@
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+        &__hero{
+            display: flex;
+            flex-direction: row;
+
+            &-content{
+                flex: 1;
+                padding-top:5rem;
+                @include flex-jst_dC-al_dC($al:flex-start);
+                flex-direction: column;
     
-        &__content{
-            flex: 1;
-            padding-top:3rem;
-            @include flex-jst_dC-al_dC($al:flex-start);
-            flex-direction: column;
-
-                h1{
-                    font-family: $font_family;
-                    font-weight: 700;
-                    font-size: 38px;
-                    line-height: 120%;
-                    
-                    color: #fff;
-                }
-
-                p{
-                    font-family: $font_family;
-                    font-weight: normal;
-                    font-size: 18px;
-                    line-height: 130%;
-                    color: #fff;
-                    margin-top: 1.5rem;
-                }
-
-                &-knowMore{
-                    margin: 1.5rem 0 ;
-                    @include flex-jst_dC-al_dC();
-                    color: #fff;
-                    img{
-                        width: 33.33px;
-                        height: 33.33px;
-                        margin-right: 1rem ;
+                    h1{
+                        font-family: $font_family;
+                        font-weight: 700;
+                        font-size: 38px;
+                        line-height: 120%;
                         
+                        color: #fff;
                     }
-                }
-
-                &-demoAsk{
-                    width: 50%;
-                    display: flex;
-                    flex-direction: column;
-
-                        button:first-child{
-                            width: 100%;
-                            min-height: 50px;
-                            font-family: $font_family;
-                            font-weight: 500;
-                            font-size: 17px;
-                            line-height: 22.1px;
-                            background: $gradient-btn;
-                            padding: 0 1rem;
-                            color: #fff;
-                            cursor: pointer;
-                            outline: none;
-                            margin-bottom: 1rem;
-                            border-radius: 4px;
-                            outline: none;
-                            border: none;
-                            text-align: center;
+    
+                    p{
+                        font-family: $font_family;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 130%;
+                        color: #fff;
+                        margin-top: 1.5rem;
+                    }
+    
+                    &-knowMore{
+                        margin: 1.5rem 0 ;
+                        @include flex-jst_dC-al_dC();
+                        color: #fff;
+                        img{
+                            width: 33.33px;
+                            height: 33.33px;
+                            margin-right: 1rem ;
+                            
                         }
-                        button:last-child{
-                            width: 100%;
-                            min-height: 50px;
-                            font-family: $font_family;
-                            font-weight: 400;
-                            font-size: 18px;
-                            line-height: 23.4px;
-                            background: none;
-                            padding: 0 1rem;
-                            color: #fff;
-                            cursor: pointer;
-                            outline: none;
-                            border: 0.7px solid #FFFFFF;
-                            box-sizing: border-box;
-                            margin-bottom: 1rem;
-                            border-radius: 4px;
-                            text-align: center;
-                        }
-                }
+                    }
+    
+                    &-demoAsk{
+                        width: 50%;
+                        display: flex;
+                        flex-direction: column;
+                            button{
+                                cursor: pointer;
+                            }
+                            button:first-child{
+                                width: 100%;
+                                min-height: 50px;
+                                font-family: $font_family;
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 22.1px;
+                                background: $gradient-btn;
+                                padding: 0 1rem;
+                                color: #fff;
+                                outline: none;
+                                margin-bottom: 1rem;
+                                border-radius: 4px;
+                                outline: none;
+                                border: none;
+                                text-align: center;
+                                cursor: pointer !important;
+                            }
+                            button:last-child{
+                                width: 100%;
+                                min-height: 50px;
+                                font-family: $font_family;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 23.4px;
+                                background: none;
+                                padding: 0 1rem;
+                                color: #fff;
+                                outline: none;
+                                border: 0.7px solid #FFFFFF;
+                                box-sizing: border-box;
+                                margin-bottom: 1rem;
+                                border-radius: 4px;
+                                text-align: center;
+                                cursor: pointer !important;
+                            }
+                           
+                    }
+    
+                    }
+    
+            &-image{
+                z-index: +8;
+                flex: 1;
+                padding-top:5rem; 
+                @include flex-jst_dC-al_dC();
+    
+                    img{
+                        width: 100%;
+                        height: 100%; 
+                    }
+            
 
-                }
+        }
+    
+        }
 
-        &__image{
-            flex: 1;
-            padding-top:3rem; 
-            @include flex-jst_dC-al_dC();
-
-                img{
-                    width: 100%;
-                    height: 100%; 
-                }
+        &__features{
+            display: flex;
+            flex-wrap: wrap;
         }
 }
 
     
 .header__bg{
-    background: linear-gradient(180deg, #4C1AC4 0%, #38AAE4 76.02%);
+    background-image:   url('../assets/Big-BG.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 

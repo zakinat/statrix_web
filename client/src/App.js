@@ -1,11 +1,11 @@
-import Navbar from "./sections/navbar/Navbar";
-import Header from './sections/header/Header'
+import {Navbar,Header,Services} from './sections'
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Header/>
+      <Services/>
     </div>
   );
 }

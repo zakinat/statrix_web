@@ -19,7 +19,7 @@ const Header = () => (
                             </div>
 
                             <div className="header__hero-content-demoAsk">
-                                <button type="button"  onClick={()=>console.log('from button')}>Попробовать 7 дней бесплатно</button>
+                                <button type="button"  >Попробовать 7 дней бесплатно</button>
                                 <button type="button" >Запросить демо-режим</button>
                             </div>
 

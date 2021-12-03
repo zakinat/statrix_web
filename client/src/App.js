@@ -1,4 +1,5 @@
-import {Navbar,Header,Services} from './sections'
+import {Navbar,Header,Services,Feedbacks} from './sections'
+
 
 function App() {
   return (
@@ -6,6 +7,7 @@ function App() {
       <Navbar/>
       <Header/>
       <Services/>
+      <Feedbacks/>
     </div>
   );
 }

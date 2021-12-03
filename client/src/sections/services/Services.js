@@ -1,5 +1,5 @@
 import React from 'react'
-import ServiceWildberries from '../../components/service/ServiceWildberries'
+import {ServiceWildberries} from '../../components'
 import {DataServices,title} from './contentWildberries'
 
 

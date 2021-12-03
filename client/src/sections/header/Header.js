@@ -1,5 +1,5 @@
 import React from 'react';
-import BubbleHeader from '../../components/bubble/BubbleHeader';
+import {BubbleHeader} from '../../components';
 import Features from '../features/Features';
 import {HeroPhoto,circle} from './import_img'
 

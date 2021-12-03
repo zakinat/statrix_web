@@ -1,0 +1,125 @@
+.feedbacks{
+    @include flex-jst_dC-al_dC($al:flex-start);
+    flex-direction: row;
+    position: relative;
+    border: 1px solid red;
+
+        .leftArrow{
+            position: absolute;
+            top: 50%;
+            left: 2em;
+        }
+        .rightArrow{
+            position: absolute;
+            top: 50%;
+            right: 2em;
+        }
+        
+            &__content{
+                @include flex-jst_dC-al_dC($al:flex-start);
+                flex-direction: row;
+                border: 2px solid orange;
+            }
+
+}
+
+.feedback{
+    @include flex-jst_dC-al_dC($al:flex-start);
+    flex-direction: row;
+    
+    padding:0 2rem;
+    
+
+        &__userImg{
+            margin-right: 1rem;
+            span{
+                height: 4rem;
+                width: 4rem;
+                background-color: #000;
+                border-radius: 50%;
+                display: inline-block;
+            }
+            img{
+                height: 4rem;
+                width: 4rem;
+                border-radius: 50%;
+                display: inline-block; 
+            }
+        }
+
+        &__content{
+                @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
+                text-align: left;
+                flex-direction: column;
+
+                    &-icons{
+                        @include flex-jst_dC-al_dC($jst:space-between);
+                        width: 100%;
+
+                            span:first-child{
+                                font-family: $font_family;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 100px;
+                                line-height: 100%;
+
+                                /* identical to box height, or 100px */
+
+                                /* Main color 3 */
+                                color: #0B7ACD;
+                            }
+
+                            
+
+                    }
+
+                    p{
+                        font-family: $font_family;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 130%;
+                        
+                        /* or 23px */
+                        
+                        /* Text color */
+                        color: #212121;
+                        margin-bottom: 1rem;
+                    }
+
+                    &-signature{
+                        h3{
+                            font-family: $font_family;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 24px;
+                            line-height: 130%;
+
+                            /* or 31px */
+
+                            /* Text color */
+                            color: #212121;
+                            margin-bottom: 0.1rem;
+                        }
+
+
+                        span{
+                            font-family: $font_family;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 130%;
+
+                            /* or 23px */
+
+                            /* Grey text */
+                            color: #919191;
+                        }
+                    }
+
+        }
+}
+
+.feedback__active{
+    width: 100%;
+}

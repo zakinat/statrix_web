@@ -1,8 +1,25 @@
 .feedbacks{
-    @include flex-jst_dC-al_dC($al:flex-start);
-    flex-direction: row;
+    @include flex-jst_dC-al_dC();
+    flex-direction: column;
     position: relative;
-    border: 1px solid red;
+    background-image: url('../assets/wavesFeedbacks.svg');
+    background-size: contain;
+    
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+
+    h2{
+        font-family: $font_family;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 120%;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 6rem;
+        margin-top: 7rem;
+    }
+
 
         .leftArrow{
             position: absolute;
@@ -18,16 +35,17 @@
             &__content{
                 @include flex-jst_dC-al_dC($al:flex-start);
                 flex-direction: row;
-                border: 2px solid orange;
+            
             }
-
+               
+            
 }
 
 .feedback{
     @include flex-jst_dC-al_dC($al:flex-start);
     flex-direction: row;
+   
     
-    padding:0 2rem;
     
 
         &__userImg{
@@ -62,10 +80,6 @@
                                 font-weight: bold;
                                 font-size: 100px;
                                 line-height: 100%;
-
-                                /* identical to box height, or 100px */
-
-                                /* Main color 3 */
                                 color: #0B7ACD;
                             }
 
@@ -79,10 +93,6 @@
                         font-weight: normal;
                         font-size: 18px;
                         line-height: 130%;
-                        
-                        /* or 23px */
-                        
-                        /* Text color */
                         color: #212121;
                         margin-bottom: 1rem;
                     }
@@ -94,10 +104,6 @@
                             font-weight: bold;
                             font-size: 24px;
                             line-height: 130%;
-
-                            /* or 31px */
-
-                            /* Text color */
                             color: #212121;
                             margin-bottom: 0.1rem;
                         }
@@ -109,10 +115,6 @@
                             font-weight: normal;
                             font-size: 18px;
                             line-height: 130%;
-
-                            /* or 23px */
-
-                            /* Grey text */
                             color: #919191;
                         }
                     }
@@ -122,4 +124,5 @@
 
 .feedback__active{
     width: 100%;
+    padding-right: 2rem;
 }

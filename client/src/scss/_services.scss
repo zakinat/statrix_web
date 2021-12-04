@@ -13,7 +13,7 @@
             &__img{
                 
                 width: 100%;
-                
+                position: relative;
                     img{
                         width: 100%;
                         height: 100%;
@@ -206,28 +206,36 @@
     padding:5px 10px;
     
 }
-
-.leftImage:before{
-    content: '';
+/*
+.leftImage{
+    
+    position: absolute;
+    background: url('../assets/bluedots.svg') no-repeat;
+    z-index: -1;
+    top: 0em;
+    left: 0em;
+    
     width: 100%;
     height: 100%;
-    background: url('../assets/bluedots.svg') no-repeat;
-    position: absolute;
-    z-index: -1;
-    top: -1em;
-    left: -4em;
+    overflow: hidden;
+    
     
 }
 
-.rightImage:after{
-    content: '';
-    width: 100%;
-    height: 100%;
+.rightImage{
+    
+    position: absolute;
+    
     background: url('../assets/orngedots.svg') no-repeat;
     position: absolute;
     z-index: -1;
     top: -2em;
     right: -58em;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
 
     
 }
+*/

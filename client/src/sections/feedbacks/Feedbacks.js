@@ -23,8 +23,8 @@ const prevtFeedbacks=()=>{
 
     return (
         <div className='feedbacks section__padding'>
-                <IoIosArrowDropleftCircle className='leftArrow' color={hoverLeft?'#0B7ACD':"#97CBF1"} size={60} onClick={prevtFeedbacks} onMouseEnter={()=>setHoverLeft(true)} onMouseLeave={()=>setHoverLeft(false)}/>
-                <IoIosArrowDroprightCircle className='rightArrow' color={hoverRight?'#0B7ACD':"#97CBF1"} size={60} onClick={nextFeedbacks} onMouseEnter={()=>setHoverRight(true)} onMouseLeave={()=>setHoverRight(false)}/>
+                <h2>Наши пользователи о нас </h2>
+               
                 <div className='feedbacks__content'>
                                 {
                                 DataFeedbacks.map((feedback,index)=>{
@@ -41,6 +41,8 @@ const prevtFeedbacks=()=>{
                         })
                     }
                 </div>
+                <IoIosArrowDropleftCircle className='leftArrow' color={hoverLeft?'#0B7ACD':"#97CBF1"} size={60} onClick={prevtFeedbacks} onMouseEnter={()=>setHoverLeft(true)} onMouseLeave={()=>setHoverLeft(false)}/>
+                <IoIosArrowDroprightCircle className='rightArrow' color={hoverRight?'#0B7ACD':"#97CBF1"} size={60} onClick={nextFeedbacks} onMouseEnter={()=>setHoverRight(true)} onMouseLeave={()=>setHoverRight(false)}/>
        
         
         </div>

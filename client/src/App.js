@@ -1,4 +1,4 @@
-import {Navbar,Header,Services,Feedbacks} from './sections'
+import {Navbar,Header,Services,Feedbacks,Tariffs} from './sections'
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Header/>
       <Services/>
       <Feedbacks/>
+      <Tariffs/>
     </div>
   );
 }

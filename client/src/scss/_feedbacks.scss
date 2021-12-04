@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     background-image: url('../assets/wavesFeedbacks.svg');
-    background-size: contain;
+    background-size: cover;
     
     padding-bottom: 10rem;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@
         }
         
             &__content{
-                @include flex-jst_dC-al_dC($al:flex-start);
+                @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
                 flex-direction: row;
             
             }
@@ -123,6 +123,6 @@
 }
 
 .feedback__active{
-    width: 100%;
+    width: 50%;
     padding-right: 2rem;
 }

@@ -21,11 +21,12 @@ const Tariffs = () => {
                             <div className='tariffs__content-form-product-checkbox-planNotActive'>
                                 <input type="checkbox" name='productSpecific-analyis'/>
                                 <label htmlFor="productSpecific-analyis">Конкурентный анализ</label>
+                                <span className='product__badge'>скоро</span>
                             </div>
                             
                         </div>
-                        <SliderPlan/>
-
+                        <SliderPlan min={0} max={1500000} classname='tariffs__content-form-product-rangeSlider' title={'Предполагаемая выручка'}/>
+                        <p>Предварительный расчёт</p>
                     </form>
 
                     <p>У нас гибкое ценообразование: цена зависит от ежемесячной выручки. Учитывается выручка после комиссии маркетплейса на момент оплаты. Если в течение оплаченного периода она увеличивается, цена не меняется</p>

@@ -1,135 +1,174 @@
-.footer {
+.footer{
     @include flex-jst_dC-al_dC();
-    flex-direction: column;    
-    background: $color-footer;
-
-        &__heading{
+    flex-direction: column;
+    background: #F9F9F9;
+    margin-top: 5rem;
+        &__socialMedia{
             width: 100%;
-            text-align: center;
-            margin-bottom: 3rem;
-
-                h1{
-                    font-family: $font_family;
-                    font-weight: 800;
-                    font-size: 64px;
-                    line-height: 75px;
-                }
-        }
-
-        &__btn{
-            @include flex-jst_dC-al_dC();
-            padding: 1rem;
-            border: 1px solid #fff;
-            text-align: center;
-            margin-bottom: 10rem;
-            cursor: pointer;
-
-                p{
-                    font-size: 18px;
-                    font-family: $font_family;
-                    line-height: 21px;
-                    color: #fff;
-                    word-spacing: 2px;
-                }
-        }
-
-        &__links{
-            @include flex-jst_dC-al_dC($jst:space-between,$al:flex-start);
+            @include flex-jst_dC-al_dC($jst:flex-end);
             flex-direction: row;
-            flex-wrap: wrap;
+            padding: 0.2rem;
+            padding-right: 2rem;
+
+            small{
+                font-family: $font_family;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 130%;
+                color: #212121;
+                margin-right: 1rem;
+            }
+            span{
+                margin-left: 0.3rem;
+                cursor: pointer;
+            }
+        }
+
+
+        &__content{
+            border-bottom: 0.6px solid #919191;;
+            border-top: 0.6px solid #919191;;
             width: 100%;
-            text-align: left;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
+            flex-direction: row;
 
-                div{
-                    width: 250px;
-                    margin: 1rem;
+            &-brand{
+                @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
+                flex-direction: column;
+                margin-right: 15rem;
+                img{
+                    width: 129px;
+                    margin-bottom: 2rem;
                 }
-
-                &-logo{
-                    display: flex;
+                &-contacts{
+                    @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
                     flex-direction: column;
 
-                        img{
-                            width: 118px;
-                            height: 30px;
-                        
-                            margin-bottom: 1rem;
-                        }
-                        p {
-                            font-family: $font_family;
-                            font-size: 12px;
-                            line-height: 15px;
-                            color: #fff;
-                        }
-                }
+                    span{
+                        font-family: $font_family;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 130%;
 
-                &-div{
-                    display: flex;
-                    justify-content: flex-start;
-                    flex-direction: column;
+                        /* or 18px */
 
-                        h4{
-                            font-size: 14px;
-                            line-height: 17px;
-                            font-family: $font_family;
-                            color: #fff;
-                        
-                            margin-bottom: 0.9rem;
-                        }
-                        p {
-                            font-size: 12px;
-                            line-height: 15px;
-                            font-family: $font_family;
-                            color: #fff;
-                        
-                            margin: 0.5rem 0;
-                            cursor: pointer;
-                        }
+                        /* Grey text */
+                        color: #919191;
+                    }
+                    span:last-child{
+                        margin-top: 2rem;
+
+                    }
                 }
+            }
+
+            &-mainLinks{
+                @extend .footer__links-coloum;
+                h3{
+                    @extend .footer__links-h3;
+                }
+            }
+            &-ourproducts{
+                @extend .footer__links-coloum;
+                h3{
+                    
+                    @extend .footer__links-h3;
+                }
+                span{
+                    @extend .footer__links-span;
+                }
+            }
+
+            &-moreConditions{
+                @extend .footer__links-coloum;
+                h3{
+                    
+                    @extend .footer__links-h3;
+                }
+                span{
+                    @extend .footer__links-span;
+                }
+            }
+
+            &-aboutUs{
+                @extend .footer__links-coloum;
+                h3{
+                    
+                    @extend .footer__links-h3;
+                }
+                span{
+                    @extend .footer__links-span;
+                }
+            }
         }
 
         &__copyright{
-            margin-top: 2rem;
-            text-align: center;
-            width: 100%;
+            @include flex-jst_dC-al_dC($jst:space-between,$al:space-between);
+                flex-direction: row;
+                width: 100%;
+                
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                small{
+                    font-family: $font_family;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: #919191;
+                }
 
-            p {
-                font-size: 12px;
-                font-family: $font_family;
-                line-height: 15px;
-                color: #fff;
-            }
+                &-tags{
+                    small{
+                        font-family: $font_family;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: #919191;
+                        margin-left: 1.5rem;
+                    }
+                }
+
         }
 }
 
-//media queries
+//extended classes
 
-@media screen and (max-width: 850px) {
-    .footer__heading h1 {
-        font-size: 44px;
-        line-height: 50px;
-    }
+.footer__links-h3{
+    font-family: $font_family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 130%;
+
+    /* identical to box height, or 22px */
+
+    /* Text color */
+    color: #212121;
+    margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 550px) {
-    .footer__heading h1 {
-        font-size: 34px;
-        line-height: 42px;
-    }
+.footer__links-span{
+    font-family: $font_family;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 130%;
 
-    .footer__links div {
-        margin: 1rem 0;
-    }
+                    /* identical to box height, or 22px */
 
-    .footer__btn p {
-        font-size: 14px;
-        line-height: 20px;
-    }
+                    /* Text color */
+                    color: #212121;
+                    margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 400px) {
-    .footer__heading h1 {
-        font-size: 27px;
-        line-height: 38px;
-    }
+.footer__links-coloum{
+    @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
+    flex-direction: column;
+    margin-right: 4rem;
 }

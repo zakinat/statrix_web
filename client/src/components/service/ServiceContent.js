@@ -25,7 +25,7 @@ const ServiceContent = ({title,spcWord,text,services,index}) => {
 const ServiceImage=({img,imgSide})=>{
     return(
             <div className={`service__img `}>
-                <div className={`${imgSide}`}></div>
+                {/*<div className={`${imgSide}`}></div>*/}
                 <img src={img} alt='service image1'/>
             </div>
     )

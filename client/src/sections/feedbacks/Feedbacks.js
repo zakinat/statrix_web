@@ -12,11 +12,11 @@ const [hoverLeft,setHoverLeft] =useState(false)
 const length=DataFeedbacks.length
 
 const nextFeedbacks=()=>{
-    setCurrent( current===length-1?0:current+1)
+    setCurrent( current===length-1?0:current+2)
 }
 
 const prevtFeedbacks=()=>{
-    setCurrent( current===0?length-1:current-1)
+    setCurrent( current===0?length-1:current-2)
 }
 
 

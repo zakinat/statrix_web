@@ -13,7 +13,7 @@ const ServiceContent = ({title,spcWord,text,services,index}) => {
             </div>
             <div className='service__content-info-services'>
                 {services.map((service,index)=>
-                <div className='service__content-info-services-service'>
+                <div className='service__content-info-services-service' key={index}>
                     <span></span>
                     <p>{service}</p>
                 </div>)}
@@ -25,7 +25,7 @@ const ServiceContent = ({title,spcWord,text,services,index}) => {
 const ServiceImage=({img,imgSide})=>{
     return(
             <div className={`service__img `}>
-                {/*<div className={`${imgSide}`}></div>*/}
+                <div className={`${imgSide}`}></div>
                 <img src={img} alt='service image1'/>
             </div>
     )

@@ -5,7 +5,7 @@ const Features = () => {
     return (
         <div className='features'>
             {DataFeatures.map((feature,index)=>
-            <Feature title={feature.title} text={feature.text} icon={feature.icon} />)}
+            <Feature title={feature.title} text={feature.text} icon={feature.icon} key={index}/>)}
             
         </div>
     )

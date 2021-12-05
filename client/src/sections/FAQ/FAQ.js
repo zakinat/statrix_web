@@ -19,7 +19,7 @@ const FAQ = () => {
             <div className='FAQ__content-qustions'>
                 {DataFAQ.map((QA,index)=>{
                     return(
-                        <div className={`FAQ__content-qustions-card ${clickedCard===index? 'card__opened':''}`} onClick={()=>setClickedCard(clickedCard===index? false:index)}>
+                        <div className={`FAQ__content-qustions-card ${clickedCard===index? 'card__opened':''}`} onClick={()=>setClickedCard(clickedCard===index? false:index)} key={index}>
                             <div className='FAQ__content-qustions-card-QA'>
                                 <p className='FAQ__content-qustions-card-QA-Q'>{QA.Q}</p>
                                 <p className='FAQ__content-qustions-card-QA-A'>{QA.A}</p>

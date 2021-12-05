@@ -1,43 +1,38 @@
 .navbar{
-    
     @include flex-jst_dC-al_dC($jst:space-between);
         &__links{
             flex: 1;
             @include flex-jst_dC-al_dC($jst:flex-start);
-
                 &-logo{
                     margin-right:6rem ;
-                    img {
-                        width: 104px;
-                        height: 31px;
-                    }
+                        img {
+                            width: 104px;
+                            height: 31px;
+                        }
                 }
 
                 &-container{
                     display: flex;
                     flex-direction: row;
-                    p{
-                        @extend .navbar__links-p;
-                    }
+                        p{
+                            @extend .navbar__links-p;
+                        }
                 }
         }
 
         &__sign{
            @include flex-jst_dC-al_dC($jst:flex-end);
-
                 p{
                     @extend .navbar__links-p;
-                    }
+                }
                 button{
                     @extend .navbar__sign-button;   
-                    }
+                }
         }
 
         &__menu{
             margin-left: 1rem;
             display: none;
-            position: relative;
-
                 svg{
                     cursor: pointer;
                 }
@@ -46,14 +41,18 @@
                     @include flex-jst_dC-al_dC($jst:flex-end);
                     flex-direction: column;
                     text-align: center;
-                    background: $color-footer;
+                    position:absolute;
+                    background-color: #fff;
+                    z-index: +10;
+                    width: 100%;
+                    left: 0;
+                    top: 4.1rem;
+                    
                     padding: 2rem;
-                    position: absolute;
-                    top: 40px;
-                    right: 0;
-                    margin-top: 1rem;
-                    min-width: 210px;
-                    border-radius: 5px;
+                    
+                    
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
                     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
                         button{
                             @extend .navbar__sign-button;   
@@ -61,7 +60,7 @@
                         &-links{
                             p{
                                 @extend .navbar__links-p;
-                                margin:1rem 0 !important;
+                                margin:1.5rem 0 !important;
                             }
             
                             &-sign{
@@ -85,13 +84,9 @@
     line-height: 130%;
     text-align: center;
     color: #FFFFFF;
-    
     width: 50px;
     height: 20px;
-   
-    
     padding:5px 10px;
-    
     right:-12px;
     top:-18px;
 }
@@ -111,8 +106,6 @@
     text-transform: capitalize;
     margin: 0 1rem;
     cursor: pointer;
-    
-
 }
 
 .navbar__sign-button{
@@ -129,34 +122,45 @@
 }
 
 //media queries
-@media screen and (max-width: 1050px){
-    .navbar__links-container{
-        display: none;
-    }
-    .navbar__menu{
-        display: flex;
+@media screen and (max-width: 1295px){
+    .navbar{
+            &__links{    
+                    &-logo{
+                        margin-right:0.2rem !important;
+                    }
+                
+                    .navbar__menu{
+                        display: flex;
+                    }
+            }
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1200px){
     .navbar{
-        padding: 2rem 4rem;
-    }
-    
+        &__links{    
+                &-container{
+                    display: none;
+                }
+        }
+        &__menu{
+            display: flex;
+        }
+    }  
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 600px){
     .navbar{
-        padding: 2rem;
-    }
-    .navbar__sign{
-        display: none;
-    }
-    .navbar__menu-container{
-        top: 20px;
-    }
-    .navbar__menu-container-links-sign{
-        display: block;
-    }
-    
+        &__sign{
+            display: none;
+        }
+
+        &__menu-container{
+            &-links-sign{
+                display: block;
+                width: 100%;
+                @include flex-jst_dC-al_dC($jst:flex-end);
+            }
+        }
+    }  
 }

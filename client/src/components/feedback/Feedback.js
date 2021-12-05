@@ -7,7 +7,7 @@ const Feedback = ({userImg,userName,text,category,rating}) => {
             <div className='feedback__userImg'>
             {!userImg? 
                  (<span></span>):
-                 (<img src={userImg}/>
+                 (<img src={userImg} alt='User'/>
             )}
                 
             </div>

@@ -29,7 +29,7 @@ const prevtFeedbacks=()=>{
                                 {
                                 DataFeedbacks.map((feedback,index)=>{
                             return (
-                                <div className={(index ===current || index===current+1)? 'feedback feedback__active':'feedback'}>
+                                <div className={(index ===current || index===current+1)? 'feedback feedback__active':'feedback'} key={index}>
                                     {
                                         (index ===current || index===current+1) &&
                                         (

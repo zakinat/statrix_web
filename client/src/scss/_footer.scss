@@ -42,6 +42,7 @@
                 img{
                     width: 129px;
                     margin-bottom: 2rem;
+                    cursor: pointer;
                 }
                 &-contacts{
                     @include flex-jst_dC-al_dC($jst:flex-start,$al:flex-start);
@@ -151,6 +152,7 @@
     /* Text color */
     color: #212121;
     margin-bottom: 1rem;
+    cursor: pointer;
 }
 
 .footer__links-span{
@@ -165,6 +167,7 @@
                     /* Text color */
                     color: #212121;
                     margin-bottom: 0.5rem;
+                    cursor: pointer;
 }
 
 .footer__links-coloum{

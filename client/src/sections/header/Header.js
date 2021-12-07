@@ -2,7 +2,6 @@ import React from 'react';
 import {BubbleHeader} from '../../components';
 import Features from '../features/Features';
 import {HeroPhoto,circle} from './import_img'
-
 const Header = () => (
     
             <div className="header header__bg section__padding" id="home">
@@ -27,13 +26,13 @@ const Header = () => (
                         </div>
 
                         <div className="header__hero-image">
-                            <img src={HeroPhoto} alt='phone-laptop' />
+                            <img src={HeroPhoto} alt='hero' />
                         </div>
                 </div>
 
-                <div className='header__features'>
-                    <Features/>
-                </div>
+                
+                <Features classname={'header__features'}/>
+                
                 
             </div>
 );

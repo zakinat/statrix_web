@@ -1,9 +1,9 @@
 import React from 'react'
 import {Feature} from '../../components'
 import {DataFeatures} from './content'
-const Features = () => {
+const Features = ({classname}) => {
     return (
-        <div className='features'>
+        <div className={`features ${classname}`}>
             {DataFeatures.map((feature,index)=>
             <Feature title={feature.title} text={feature.text} icon={feature.icon} key={index}/>)}
             

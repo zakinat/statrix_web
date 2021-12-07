@@ -3,18 +3,17 @@
     -webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-    height: 213px;
+    height: 13.3em;
+	width: 13.3em;
 	position: absolute;
-	width: 213px;
-    z-index: +5;
 }
 
 
 
 //Header's  bubbles
 .x1 {
-	left: -6.5%;
-	top: 2%;
+	left: -6.5em;
+	top: 2em;
 
     background: linear-gradient(180deg, #6187FD 0%, rgba(97, 135, 253, 0) 100%);	
 }
@@ -22,8 +21,8 @@
 .x2 {
     
 	
-	left: 45%;
-	top: 6%;
+	left: 41em;
+	top: 4.5em;
 	
 
     background: linear-gradient(161.83deg, rgba(75, 160, 253, 0.8) 18.5%, rgba(75, 160, 253, 0) 87.64%);
@@ -35,15 +34,15 @@
 .x3 {
     background: linear-gradient(216.68deg, #6187FD 15.75%, rgba(97, 135, 253, 0) 75.57%);
 	
-	left: 87%;
-	top: 7%;
+	left: 78em;
+	top: 5em;
 	
 }
 
 .x4 {
 	background: linear-gradient(360deg, #7B6BFF 3.52%, rgba(123, 107, 255, 0) 64.55%);	
-	left: 70%;
-	top: 40%;
+	left: 62em;
+	top: 25em;
 	
 	
 }

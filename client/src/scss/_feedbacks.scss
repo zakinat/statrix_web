@@ -125,4 +125,16 @@
 .feedback__active{
     width: 50%;
     padding-right: 2rem;
+
+border: 1px solid red !important ;
+}
+
+
+//media queries
+@media screen and (max-width: 1000px){
+    .feedbacks{
+        border: 2px solid orange;
+        overflow: scroll;
+        max-height:750px ;
+    }
 }

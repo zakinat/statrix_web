@@ -219,10 +219,6 @@
                                 font-weight: bold;
                                 font-size: 28px;
                                 line-height: 120%;
-
-                                /* identical to box height, or 34px */
-
-                                /* Main color 2 */
                                 color: #FCA70D;
                             }
 
@@ -233,10 +229,6 @@
                                 font-weight: normal;
                                 font-size: 24px;
                                 line-height: 130%;
-
-                                /* or 31px */
-
-                                /* Text color */
                                 color: #212121;
                             }
                         }
@@ -272,3 +264,40 @@
     padding:5px 10px;
     
 }
+
+
+//media queries
+@media screen and (max-width: 850px){
+    .tariffs{
+            &__content{
+                flex-direction: column;
+                width: 100%;
+                border: 1px solid orange;
+                
+                    &-form{
+                        flex-direction: column;
+                        justify-content: center !important;
+                        align-items: center !important;
+                        padding-right: 0 !important;
+                        width: 100%;
+                            &-product{
+                                justify-content: center !important;
+                                align-items: center !important;
+                                flex-direction: column;
+                                width: 100%;
+                                        &-checkbox{
+                                            @include flex-jst_dC-al_dC();
+                                                      
+                                                  }
+                                        }
+                            button{
+                                margin-right: 0 !important;
+                            }
+                            }
+    
+    
+                    }
+            }
+    
+    
+    }

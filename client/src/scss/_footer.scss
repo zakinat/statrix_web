@@ -138,7 +138,92 @@
         }
 }
 
-//extended classes
+
+
+
+
+@media screen and (max-width: 1100px){
+    .footer{
+            &__socialMedia{
+                justify-content: center !important;
+                align-items: center !important;
+            }
+    
+    
+            &__content{
+                
+                @include flex-jst_dC-al_dC();
+                flex-direction: column;
+    
+                &-brand{
+                    @include flex-jst_dC-al_dC();
+                    flex-direction: column;
+                    margin-top: 5rem;
+                    margin-right: 0;
+                    &-contacts{
+                        @include flex-jst_dC-al_dC();
+                    }
+                    
+                   
+                }
+
+                &-mainLinks{
+                    justify-content: center !important;
+                    align-items: center !important;
+                    margin-top: 5rem;
+                    margin-right: 0 !important;
+                }
+                &-ourproducts{
+                    justify-content: center !important;
+                    align-items: center !important;
+                    margin-top: 5rem;
+                    margin-right: 0 !important;
+                }
+                &-moreConditions{
+                    justify-content: center !important;
+                    align-items: center !important;
+                    margin-top: 5rem;
+                    margin-right: 0 !important;
+                }
+                &-aboutUs{
+                    justify-content: center !important;
+                    align-items: center !important;
+                    margin-top: 5rem;
+                    margin-right: 0 !important;
+                }
+    
+               
+              
+    
+                
+            }
+    
+            &__copyright{
+                justify-content: center !important;
+                align-items: center !important;            
+                flex-direction: column !important;
+                    small{
+                        text-align: center;
+                    }
+    
+                    &-tags{
+                        margin-top: 1.5rem;
+                        display: flex;
+                        justify-content:space-between ;
+                        align-items: center;
+                        small{
+                            text-align: center;
+                        }
+                    }
+    
+            }
+    }
+    
+  }
+
+
+
+  //extended classes
 
 .footer__links-h3{
     font-family: $font_family;
@@ -161,10 +246,6 @@
                     font-weight: normal;
                     font-size: 17px;
                     line-height: 130%;
-
-                    /* identical to box height, or 22px */
-
-                    /* Text color */
                     color: #212121;
                     margin-bottom: 0.5rem;
                     cursor: pointer;

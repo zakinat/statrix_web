@@ -238,3 +238,50 @@
 
     
 }
+
+
+//media queries
+@media screen and (max-width: 1050px){
+   
+
+    .services{
+        .service{
+           
+            flex-direction: column !important;
+                &__img{
+                    display: none !important;
+                        img{
+                            display: none !important;  
+                        }
+                }
+               &> *+*>div{
+                   padding-left: 0 !important;
+               }
+               &> *:first-child>div{
+                   padding-right: 0 !important;
+               }
+    
+    
+               &__content{
+                     width: 100%;   
+                
+                &-info{  
+                    @include flex-jst_dC-al_dC();
+                        &-title{
+                            h2{
+                                font-size: 3rem;
+                            }
+                        }
+                        
+                }
+    
+            }
+        
+        }
+    }
+
+    .ServiceWildberries__content-askDemo{
+
+        @include flex-jst_dC-al_dC();
+    }
+}
